@@ -27,15 +27,16 @@ public class Cliente {
 	@Column(name="apellidos", nullable=false,length = 150)
 	private String apellidos;
 	@Size(min =8, max = 150, message="la direccion no debe superar los 150 caracteres")
-	@Column(name="direccion", nullable=false,length = 150)
+	@Column(name="direccion", nullable=true,length = 150)
 	private String direccion;
 	@Size(min =8, message="el telefono debe tener 8 caracteres como minimo")
-	@Column(name="telefono", nullable=false,length = 10)
+	@Column(name="telefono", nullable=true,length = 10)
 	private String telefono;
 	@NotNull
 	@NotBlank(message="el email es obligatorio")
 	@Column(nullable=false,length = 150)
 	private String email;
+	
 	
 	public Integer getIdCliente() {
 		return idCliente;

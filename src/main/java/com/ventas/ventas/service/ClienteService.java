@@ -11,6 +11,7 @@ import com.ventas.ventas.repository.IClienteRepository;
 
 @Service
 public class ClienteService implements IClienteService {
+	
 	@Autowired
 	private IClienteRepository clienteRepo;
 	@Override
